@@ -1,5 +1,4 @@
 ;;color
-
 (add-to-list 'load-path "./emacs-color-theme-solarized")
 (require 'color-theme-solarized)
 (enable-theme 'solarized-dark)
@@ -9,6 +8,11 @@
 
 (global-linum-mode 1)
 (setq column-number-mode t)
+
+;clojure
+(add-to-list 'load-path "./clojure-mode")
+(require 'clojure-mode)
+
 
 ;;highlighting for swank
 (add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
