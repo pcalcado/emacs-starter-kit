@@ -1,7 +1,4 @@
 ;;color
-(add-to-list 'load-path "./emacs-color-theme-solarized")
-(require 'color-theme-solarized)
-(enable-theme 'solarized-dark)
 (require 'color-theme)
 (color-theme-blackboard)
 
@@ -9,10 +6,20 @@
 (global-linum-mode 1)
 (setq column-number-mode t)
 
+;;auto-complete
+(add-to-list 'load-path "/Users/pcalcado/.emacs.d/auto-complete-1.3.1")
+(require 'auto-complete)
+
+;(add-to-list 'load-path "/Users/pcalcado/.emacs.d/slime/contrib")
+;(require 'slime-fuzzy)
+
 ;clojure
-(add-to-list 'load-path "./clojure-mode")
+(add-to-list 'load-path "/Users/pcalcado/.emacs.d/clojure-mode")
 (require 'clojure-mode)
 
+(add-to-list 'load-path "/Users/pcalcado/.emacs.d/ac-slime")
+(require 'ac-slime)
+(add-hook 'slime-mode-hook 'set-up-slime-ac)
 
 ;;highlighting for swank
 (add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
@@ -37,7 +44,7 @@
 ;(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
 ;;magit
-(add-to-list 'load-path "./magit/magit.el")
+(add-to-list 'load-path "/Users/pcalcado/.emacs.d/magit/magit.el")
 (require 'magit)
 
 ;;c#
@@ -45,15 +52,19 @@
 (setq auto-mode-alist (cons '("\\.cs$" . csharp-mode) auto-mode-alist))
 
 ;;scala
-(add-to-list 'load-path "./scala-mode")
+(add-to-list 'load-path "/Users/pcalcado/.emacs.d/scala-mode")
 (require 'scala-mode)
 (setq auto-mode-alist (cons '("\\.scala$" . scala-mode) auto-mode-alist))
 ;; Load the ensime lisp code...
-(add-to-list 'load-path "./ensime")
+(add-to-list 'load-path "/Users/pcalcado/.emacs.d/ensime")
 (require 'ensime)
 
 ;; This step causes the ensime-mode to be started whenever
 ;; scala-mode is started for a buffer. You may have to customize this step
 ;; if you're not using the standard scala mode.
 (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
+
+;;python
+(setq auto-mode-alist (cons '("\\.py$" python-mode flymake-mode) auto-mode-alist))
+
 
