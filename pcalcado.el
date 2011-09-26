@@ -55,6 +55,8 @@
 (add-to-list 'load-path "/Users/pcalcado/.emacs.d/scala-mode")
 (require 'scala-mode)
 (setq auto-mode-alist (cons '("\\.scala$" . scala-mode) auto-mode-alist))
+(add-hook 'scala-mode-hook 'paredit-mode)
+
 ;; Load the ensime lisp code...
 (add-to-list 'load-path "/Users/pcalcado/.emacs.d/ensime")
 (require 'ensime)
@@ -66,5 +68,9 @@
 
 ;;python
 (setq auto-mode-alist (cons '("\\.py$" python-mode flymake-mode) auto-mode-alist))
+
+
+;;sof wrap
+(visual-line-mode)
 
 
