@@ -74,3 +74,6 @@
 (visual-line-mode)
 
 
+
+;; as per http://jblevins.org/projects/markdown-mode/
+(defun markdown-custom () "markdown-mode-hook" (setq markdown-command "markdown | smartypants")) (add-hook 'markdown-mode-hook '(lambda() (markdown-custom)))
