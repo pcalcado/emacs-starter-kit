@@ -2,7 +2,6 @@
 (require 'color-theme)
 (color-theme-blackboard)
 
-
 (global-linum-mode 1)
 (setq column-number-mode t)
 
@@ -24,12 +23,16 @@
 ;;highlighting for swank
 (add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
 
-;;File associations
-(setq auto-mode-alist (cons '("\\.ftl$" . html-mode) auto-mode-alist))
-
 (require 'midje-mode)
 (add-hook 'clojure-mode-hook 'midje-mode)
 
+;;rvm mode
+(add-to-list 'load-path "/Users/pcalcado/.emacs.d/rvm")
+(require 'rvm)
+(add-hook 'ruby-mode-hook
+          (lambda () (rvm-activate-corresponding-ruby)))
+(setq auto-mode-alist (cons '("Gemfile" . ruby-mode) auto-mode-alist))
+(add-hook 'ruby-mode-hook  'esk-paredit-nonlisp)
 
 ;;htmlize
 (setq htmlize-output-type 'inline-css)
@@ -69,11 +72,8 @@
 ;;python
 (setq auto-mode-alist (cons '("\\.py$" python-mode flymake-mode) auto-mode-alist))
 
-
 ;;sof wrap
 (visual-line-mode)
-
-
 
 ;; as per http://jblevins.org/projects/markdown-mode/
 (defun markdown-custom () "markdown-mode-hook" (setq markdown-command "markdown | smartypants")) (add-hook 'markdown-mode-hook '(lambda() (markdown-custom)))
