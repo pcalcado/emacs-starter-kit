@@ -1,24 +1,44 @@
+;;;;;;;;;;;;;; global stuff
+
+;;soft wrap
+(visual-line-mode)
+
+;; small font size
+(set-face-attribute 'default (selected-frame) :height 100)
+
 ;;color
-(require 'color-theme)
-(color-theme-blackboard)
+(color-theme-twilight)
+(add-to-list 'load-path "/Users/pcalcado/.emacs.d/emacs-color-theme-solarized/")x
+
+;;(color-theme-blackboard)
 
 (global-linum-mode 1)
 (setq column-number-mode t)
 
-;;auto-complete
-(add-to-list 'load-path "/Users/pcalcado/.emacs.d/auto-complete-1.3.1")
-(require 'auto-complete)
+;;soft wrap
+(visual-line-mode)
 
-;(add-to-list 'load-path "/Users/pcalcado/.emacs.d/slime/contrib")
-;(require 'slime-fuzzy)
+;; whitespace
+(global-set-key (kbd "C-|") 'whitespace-cleanup)
 
-;clojure
+;;auto complete
+(add-to-list 'load-path "/Users/pcalcado/.emacs.d/auto-complete-1.3.1/")
+(require 'auto-complete-config)
+(ac-config-default)
+(auto-complete-mode)
+(global-set-key (kbd "M-/") 'hippie-expand)
+
+
+;;;;;;;;;;;;;; language-specific
+
+;;clojure
 (add-to-list 'load-path "/Users/pcalcado/.emacs.d/clojure-mode")
 (require 'clojure-mode)
 
 (add-to-list 'load-path "/Users/pcalcado/.emacs.d/ac-slime")
 (require 'ac-slime)
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
+(global-set-key (kbd "C-M-|") 'slime-eval-buffer)
 
 ;;highlighting for swank
 (add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
@@ -34,25 +54,27 @@
 (setq auto-mode-alist (cons '("Gemfile" . ruby-mode) auto-mode-alist))
 (add-hook 'ruby-mode-hook  'esk-paredit-nonlisp)
 
+(add-hook 'ruby-mode-hook  'auto-complete)
+
 ;;htmlize
 (setq htmlize-output-type 'inline-css)
 
 ;;region overwritten
-(delete-selection-mode 1) 
+(delete-selection-mode 1)
 
 ;;haskell
-;(add-to-list 'load-path "./haskell-mode")
-;(require 'haskell-mode)
-;(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
-;(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
+;;(add-to-list 'load-path "./haskell-mode")
+;;(require 'haskell-mode)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
 ;;magit
 (add-to-list 'load-path "/Users/pcalcado/.emacs.d/magit/magit.el")
 (require 'magit)
 
 ;;c#
-(require 'csharp-mode)
-(setq auto-mode-alist (cons '("\\.cs$" . csharp-mode) auto-mode-alist))
+;;(require 'csharp-mode)
+;;(setq auto-mode-alist (cons '("\\.cs$" . csharp-mode) auto-mode-alist))
 
 ;;scala
 (add-to-list 'load-path "/Users/pcalcado/.emacs.d/scala-mode")
@@ -72,8 +94,9 @@
 ;;python
 (setq auto-mode-alist (cons '("\\.py$" python-mode flymake-mode) auto-mode-alist))
 
-;;sof wrap
-(visual-line-mode)
-
 ;; as per http://jblevins.org/projects/markdown-mode/
-(defun markdown-custom () "markdown-mode-hook" (setq markdown-command "markdown | smartypants")) (add-hook 'markdown-mode-hook '(lambda() (markdown-custom)))
+(defun markdown-custom () "markdown-mode-hook"
+  (setq markdown-command "markdown | smartypants")) (add-hook 'markdown-mode-hook '(lambda() (markdown-custom)))
+
+
+(add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
