@@ -7,8 +7,9 @@
 (set-face-attribute 'default (selected-frame) :height 100)
 
 ;;color
-(color-theme-twilight)
-(add-to-list 'load-path "/Users/pcalcado/.emacs.d/emacs-color-theme-solarized/")x
+(add-to-list 'load-path "/Users/pcalcado/.emacs.d/emacs-color-theme-solarized/")
+(require 'color-theme-solarized)
+(color-theme-solarized-dark)
 
 ;;(color-theme-blackboard)
 
@@ -20,6 +21,7 @@
 
 ;; whitespace
 (global-set-key (kbd "C-|") 'whitespace-cleanup)
+(add-hook 'after-save-hook 'whitespace-cleanup)
 
 ;;auto complete
 (add-to-list 'load-path "/Users/pcalcado/.emacs.d/auto-complete-1.3.1/")
