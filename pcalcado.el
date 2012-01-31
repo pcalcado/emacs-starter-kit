@@ -14,6 +14,7 @@
 ;;(color-theme-blackboard)
 
 (global-linum-mode 1)
+
 (setq column-number-mode t)
 
 ;;soft wrap
@@ -74,6 +75,10 @@
 (add-to-list 'load-path "/Users/pcalcado/.emacs.d/magit/magit.el")
 (require 'magit)
 
+(add-to-list 'load-path "/Users/pcalcado/.emacs.d/mo-git-blame")
+(autoload 'mo-git-blame-file "mo-git-blame" nil t)
+(autoload 'mo-git-blame-current "mo-git-blame" nil t)
+
 ;;c#
 ;;(require 'csharp-mode)
 ;;(setq auto-mode-alist (cons '("\\.cs$" . csharp-mode) auto-mode-alist))
@@ -102,3 +107,8 @@
 
 
 (add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
+
+;;icicles
+;(add-to-list 'load-path "/Users/pcalcado/.emacs.d/icicles")
+;(require 'icicles)
+;(icy-mode 0)
