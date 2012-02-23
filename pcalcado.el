@@ -43,6 +43,8 @@
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
 (global-set-key (kbd "C-M-|") 'slime-eval-buffer)
 
+(setq slime-net-coding-system 'utf-8-unix)
+
 ;;highlighting for swank
 (add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
 
