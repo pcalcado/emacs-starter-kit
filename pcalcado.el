@@ -11,8 +11,6 @@
 (require 'color-theme-solarized)
 (color-theme-solarized-dark)
 
-;;(color-theme-blackboard)
-
 (global-linum-mode 1)
 
 (setq column-number-mode t)
@@ -33,6 +31,8 @@
 
 
 ;;;;;;;;;;;;;; language-specific
+;; scheme
+(require 'quack)
 
 ;;clojure
 (add-to-list 'load-path "/Users/pcalcado/.emacs.d/clojure-mode")
@@ -51,15 +51,20 @@
 (require 'midje-mode)
 (add-hook 'clojure-mode-hook 'midje-mode)
 
-;;rvm mode
-(add-to-list 'load-path "/Users/pcalcado/.emacs.d/rvm")
-(require 'rvm)
-(add-hook 'ruby-mode-hook
-          (lambda () (rvm-activate-corresponding-ruby)))
-(setq auto-mode-alist (cons '("Gemfile" . ruby-mode) auto-mode-alist))
-(add-hook 'ruby-mode-hook  'esk-paredit-nonlisp)
+(require 'ruby-block)
+(ruby-block-mode t)
 
-(add-hook 'ruby-mode-hook  'auto-complete)
+;;rvm mode
+;(add-to-list 'load-path "/Users/pcalcado/.emacs.d/rvm")
+;(require 'rvm)
+;(add-hook 'ruby-mode-hook
+;;         (lambda () (rvm-activate-corresponding-ruby))
+;;)
+
+;(setq auto-mode-alist (cons '("Gemfile" . ruby-mode) auto-mode-alist))
+;(add-hook 'ruby-mode-hook  'esk-paredit-nonlisp)
+
+;(add-hook 'ruby-mode-hook  'auto-complete)
 
 ;;htmlize
 (setq htmlize-output-type 'inline-css)
@@ -89,16 +94,8 @@
 (add-to-list 'load-path "/Users/pcalcado/.emacs.d/scala-mode")
 (require 'scala-mode)
 (setq auto-mode-alist (cons '("\\.scala$" . scala-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.sbt$" . scala-mode) auto-mode-alist))
 (add-hook 'scala-mode-hook 'paredit-mode)
-
-;; Load the ensime lisp code...
-(add-to-list 'load-path "/Users/pcalcado/.emacs.d/ensime")
-(require 'ensime)
-
-;; This step causes the ensime-mode to be started whenever
-;; scala-mode is started for a buffer. You may have to customize this step
-;; if you're not using the standard scala mode.
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
 ;;python
 (setq auto-mode-alist (cons '("\\.py$" python-mode flymake-mode) auto-mode-alist))
@@ -109,8 +106,3 @@
 
 
 (add-hook 'slime-repl-mode-hook 'clojure-mode-font-lock-setup)
-
-;;icicles
-;(add-to-list 'load-path "/Users/pcalcado/.emacs.d/icicles")
-;(require 'icicles)
-;(icy-mode 0)

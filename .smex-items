@@ -1,0 +1,23 @@
+
+;; ----- smex-history -----
+(
+ package-list-packages
+ package-install
+ cd
+ 5x5
+ arp
+ dbx
+ dig
+)
+
+;; ----- smex-data -----
+(
+ (package-install . 5)
+ (color-theme-solarized . 4)
+ (color-theme-solarized-dark . 9)
+ (color-theme-solarized-light . 1)
+ (package-list-packages . 3)
+ (color-theme-whateveryouwant . 1)
+ (color-theme-shaman . 1)
+ (clojure-mode . 1)
+)

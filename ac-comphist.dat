@@ -1,0 +1,824 @@
+((("day?" .
+   [1 0 0 0])
+  ("security" .
+   [1 0 0 0 0 0 0 0])
+  ("removeUser" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("DeleteUserEvent" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("CreateUserEvent" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("toBeDeletedUser" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("addUser" .
+   [0 0 0 0 1 0 0])
+  ("processEvent" .
+   [0 0 0 0 1 0 0 1 0 0 0 0])
+  ("trait" .
+   [1 0 0 0 0])
+  ("NewUserEvent" .
+   [0 0 0 1 0 0 0 0 1 0 0 0])
+  ("Event" .
+   [2 0 0 0 1])
+  ("abstract" .
+   [1 0 0 0 0 0 0 0])
+  ("sealed" .
+   [1 0 0 0 0 0])
+  ("expectedUser" .
+   [0 0 0 0 1 0 0 0 0 1 0 0])
+  ("expectedWorld" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("EventProcessing" .
+   [1 0 0 0 0 1 0 0 0 0 0 0 0 0 1])
+  ("process" .
+   [1 0 0 0 0 0 0])
+  ("oldWorld" .
+   [0 0 0 1 1 0 0 1])
+  ("timestamp" .
+   [3 0 0 0 0 0 0 0 0])
+  ("newFollowed" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("sound" .
+   [2 0 0 0 0])
+  ("followed" .
+   [2 0 0 0 0 0 0 0])
+  ("follower" .
+   [1 0 0 0 0 0 0 0])
+  ("Set" .
+   [2 0 0])
+  ("UserSpec" .
+   [1 0 0 0 0 0 0 0])
+  ("inhabitants" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("size" .
+   [3 0 0 0])
+  ("newWorld" .
+   [1 0 1 0 0 0 0 0])
+  ("be" .
+   [5 0])
+  ("newUser" .
+   [1 0 0 0 0 0 0])
+  ("Sound" .
+   [3 0 0 0 0])
+  ("oldUser" .
+   [0 0 0 0 1 0 2])
+  ("NewUser" .
+   [0 0 0 5 3 0 0])
+  ("sounds" .
+   [4 0 0 0 0 0])
+  ("followers" .
+   [4 0 0 0 0 0 0 0 0])
+  ("val" .
+   [12 0 0])
+  ("valid_event" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("multiply-and-compare" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("100" .
+   [1 0 0])
+  ("what" .
+   [2 0 0 0])
+  ("999" .
+   [1 0 0])
+  ("the-thing" .
+   [2 0 0 0 0 0 0 0 0])
+  ("is-expected?" .
+   [0 0 0 1 1 0 0 0 0 0 0 0])
+  ("other-thing" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("eql" .
+   [0 0 1])
+  ("defun" .
+   [2 0 0 0 0])
+  ("function" .
+   [0 0 0 1 0 0 0 0])
+  ("if" .
+   [2 0])
+  ("SpamEvent" .
+   [0 0 0 0 2 0 0 0 0])
+  ("UserEvent" .
+   [0 0 0 0 0 1 0 0 1])
+  ("class" .
+   [7 0 0 0 0])
+  ("new" .
+   [5 0 0])
+  ("invalid_event" .
+   [2 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("SpamReportedConsumer" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("event" .
+   [8 0 0 0 0])
+  ("UserCreationConsumer" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("raise" .
+   [2 0 0 0 0])
+  ("to" .
+   [2 0])
+  ("consume" .
+   [2 0 0 0 0 0 0])
+  ("subject" .
+   [1 0 0 0 0 0 0])
+  ("describe" .
+   [5 0 0 0 0 1 0 0])
+  ("let*" .
+   [1 0 0 0])
+  ("false" .
+   [1 0 0 0 0])
+  ("AMQP" .
+   [1 0 0 0])
+  ("emacs" .
+   [1 0 0 0 0])
+  ("export" .
+   [1 0 0 0 0 0])
+  ("current_user" .
+   [0 0 0 0 0 0 0 1 0 0 0 0])
+  ("current_status" .
+   [0 0 0 0 0 0 0 0 0 2 0 0 0 0])
+  ("user_id" .
+   [9 0 0 0 0 0 0])
+  ("base_path" .
+   [0 0 0 0 0 1 0 0 0])
+  ("resource_owner" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 1 0])
+  ("scope" .
+   [1 0 0 0 0])
+  ("client_credential" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("signup_params" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("access_token" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("oauth" .
+   [1 0 0 0 0])
+  ("resource" .
+   [1 0 0 0 0 0 0 0])
+  ("nil" .
+   [3 0 0])
+  ("en" .
+   [2 0])
+  ("begin" .
+   [2 0 0 0 0])
+  (":dev-dependencies" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("spec" .
+   [3 0 0 0])
+  ("specs_to_run" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("changed_files" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 1])
+  ("echo" .
+   [3 0 0 0])
+  ("recognise!" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("greeting-audio" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("group-by" .
+   [0 0 1 0 0 0 0 0])
+  ("new-jsgf-grammar" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("new-sphinx3-loader" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("new-tied-acoustic-model" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("JSGFGrammar" .
+   [0 0 1 0 0 0 0 0 0 0 0])
+  ("new-flat-linguist" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("grammar" .
+   [2 0 0 0 0 0 1])
+  ("model" .
+   [3 0 0 0 0])
+  ("mutter.configuration/language-weight" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("mutter.configuration/word-insertion-probability" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("name" .
+   [4 0 0 0])
+  ("java.util.ArrayList." .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("filler-dictionary-file" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("word-dictionary-file" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("model-loader" .
+   [0 0 0 0 0 1 0 0 0 0 0 0])
+  ("unit-manager" .
+   [1 0 0 4 2 2 1 0 0 0 0 0])
+  ("mutter.configuration/log-math" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0])
+  ("location" .
+   [2 0 0 0 0 0 0 1])
+  ("mutter.audio-source" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("cons" .
+   [1 0 0 0])
+  ("source" .
+   [4 0 0 0 0 0])
+  ("edu.cmu.sphinx.linguist.lextree.LexTreeLinguist" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("decoder" .
+   [1 0 0 0 0 0 0])
+  ("Recognizer" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("new-partition-active-list-factory" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("new-threaded-acoustic-scorer" .
+   [0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("new-simple-pruner" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("active-list-factory" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("scorer" .
+   [0 0 0 0 1 0])
+  ("pruner" .
+   [1 0 0 0 0 0])
+  ("new-simple-breadth-first-search-manager" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("new-decoder" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("java.util.ArrayList" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("false?" .
+   [0 0 0 0 0 2])
+  ("search-manager" .
+   [0 0 0 0 1 0 1 0 1 0 0 0 0 0])
+  ("Decoder" .
+   [1 0 0 0 0 0 0])
+  ("edu.cmu.sphinx.decoder.Decoder" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("log-math" .
+   [0 0 0 0 0 1 0 0])
+  ("linguist" .
+   [4 0 0 0 0 0 0 0])
+  ("elative-beam-width" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("elativeBeamWidth" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("absolute-beam-width" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("edu.cmu.sphinx.decoder.search.PartitionActiveListFactory" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("Thread/NORM_PRIORITY" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("Thread" .
+   [1 0 0 0 0 0])
+  ("10" .
+   [1 0])
+  ("front-end" .
+   [3 0 0 0 2 0 1 0 0])
+  ("new-recogniser!" .
+   [0 0 0 0 0 0 3 0 0 0 0 0 0 0 0])
+  ("=not=>" .
+   [1 0 0 0 0 0])
+  ("new-pipeline!" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("FrontEnd" .
+   [0 0 0 0 1 0 0 0])
+  ("list" .
+   [4 0 0 0])
+  ("seq" .
+   [2 0 0])
+  ("DeltasFeatureExtractor" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("edu.cmu.sphinx.frontend.feature.LiveCMN" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("DiscreteCosineTransform" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("edu.cmu.sphinx.frontend.frequencywarp.MelFrequencyFilterBank" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("edu.cmu.sphinx.frontend.frequencywarp.MelFilter" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("float" .
+   [8 0 0 0 0])
+  ("edu.cmu.sphinx.frontend.window.RaisedCosineWindower" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("DiscreteFourierTransform" .
+   [0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("edu.cmu.sphinx.frontend.transform.DiscreteFourierTransform" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("edu.cmu.sphinx.frontend.filter.Dither" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("SpeechMarker." .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("new-speech-classifier!" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("edu.cmu.sphinx.frontend.endpoint.SpeechClassifier" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("edu.cmu.sphinx.frontend.endpoint.SpeechMarker" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("defn-" .
+   [16 0 0 0 0])
+  (":import" .
+   [2 0 0 0 0 0 0])
+  ("new-front-end!" .
+   [0 0 0 0 4 0 0 0 0 0 0 0 0 0])
+  ("mutter.configuration" .
+   [0 0 1 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 1])
+  ("args" .
+   [1 0 0 0])
+  ("arg" .
+   [1 0 0])
+  ("9091" .
+   [2 0 0 0])
+  ("9090" .
+   [1 0 0 0])
+  ("to_sym" .
+   [1 0 0 0 0 0])
+  (":body" .
+   [2 0 0 0 0])
+  ("a-200-with" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("comment" .
+   [3 0 0 0 0 0 0])
+  ("666" .
+   [3 0 0])
+  ("println" .
+   [5 0 0 0 0 0 0])
+  ("listening-backlog-for" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":params" .
+   [3 0 0 0 0 0 0])
+  ("entries" .
+   [1 0 0 0 0 0 0])
+  ("transform" .
+   [1 0 0 0 0 0 0 0 0])
+  ("select" .
+   [1 0 0 0 0 0])
+  ("sound-entry" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("map" .
+   [3 0 0])
+  ("sound_id" .
+   [0 0 0 0 0 1 0 0])
+  ("str" .
+   [2 0 0])
+  ("set-attr" .
+   [1 0 0 0 0 1 0 0])
+  ("attr" .
+   [0 0 0 1])
+  ("content" .
+   [2 0 0 0 0 0 0])
+  ("defsnippet" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("atom" .
+   [2 0 0 0])
+  ("*backlogs*" .
+   [1 0 0 0 1 0 0 0 0 0])
+  ("user" .
+   [15 0 0 0])
+  ("get" .
+   [6 0 0])
+  ("defn" .
+   [25 0 0 0])
+  ("fn" .
+   [9 0])
+  ("let" .
+   [16 0 0])
+  ("it" .
+   [7 0])
+  ("http_request" .
+   [0 0 0 0 0 0 1 0 0 0 0 0])
+  ("and_return" .
+   [0 0 0 0 1 0 1 0 0 0])
+  ("call" .
+   [1 0 0 0])
+  ("http_c2dm_send" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("auth_tokens" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("head" .
+   [1 0 0 0])
+  ("re" .
+   [1 0])
+  ("c2dm_send_uri" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("match" .
+   [3 0 0 0 0])
+  ("response" .
+   [8 0 0 0 0 1 0 0])
+  ("http" .
+   [2 0 0 0])
+  ("do" .
+   [17 0])
+  ("callback" .
+   [1 0 0 0 0 0 0 1])
+  ("http_client_login" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("post" .
+   [5 0 0 0])
+  ("client_login_uri" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("app_config" .
+   [2 0 0 2 1 0 1 1 0 0])
+  ("client" .
+   [1 0 0 0 0 0])
+  ("credentials" .
+   [3 0 0 0 0 1 0 1 0 0 2])
+  ("c2dm_config" .
+   [0 0 1 0 0 0 0 0 0 0 0])
+  ("require" .
+   [3 0 0 1 0 0 0])
+  ("handler" .
+   [2 0 0 0 0 0 0])
+  ("executed" .
+   [1 0 0 0 0 0 0 0])
+  ("send_msg" .
+   [1 0 0 0 0 0 0 0])
+  ("application_id" .
+   [0 0 0 1 1 2 0 0 0 0 0 0 0 0])
+  ("app" .
+   [4 0 0])
+  ("app_1" .
+   [0 0 0 0 1])
+  ("auth" .
+   [1 0 0 0])
+  ("setup_c2dm_send_mock" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("headers" .
+   [1 0 0 0 0 0 0])
+  ("body" .
+   [7 0 1 0])
+  ("merge" .
+   [1 0 0 0 0])
+  ("data" .
+   [4 0 0 0])
+  ("registration_id" .
+   [2 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("password" .
+   [2 0 0 0 0 0 0 1])
+  ("payload" .
+   [3 0 0 0 0 0 0])
+  ("stub" .
+   [1 0 0 0])
+  ("notification" .
+   [3 0 0 0 1 0 0 0 0 0 0 0])
+  ("c2dm" .
+   [1 0 0 0])
+  ("config" .
+   [2 0 0 0 0 0])
+  ("auth_token" .
+   [1 0 0 1 1 0 0 0 0 1])
+  ("pwd" .
+   [4 0 0])
+  ("end" .
+   [2 0 14])
+  ("setup_client_login_mock" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("def" .
+   [17 0 0])
+  ("email" .
+   [8 0 0 0 0])
+  ("params" .
+   [1 0 0 0 0 0])
+  ("bind-key" .
+   [0 0 0 0 0 1 0 0])
+  ("puts" .
+   [9 0 0 0])
+  ("message" .
+   [1 0 0 0 0 0 0])
+  ("em" .
+   [1 0])
+  ("and_yield" .
+   [1 0 0 0 0 0 0 0 0])
+  ("request" .
+   [3 0 0 0 0 0 0])
+  ("C2dmSend" .
+   [0 0 0 0 0 0 1 0])
+  ("initialize" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("retrieve_token" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("login" .
+   [1 0 0 0 0])
+  ("uri" .
+   [6 0 0])
+  ("when" .
+   [3 0 0 1])
+  ("concat" .
+   [1 0 0 0 0 0])
+  ("conj" .
+   [7 0 0 0])
+  ("handler-archive-sound" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("handler-to-listen" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("swap!" .
+   [1 0 0 0 0])
+  ("*listening-backlog*" .
+   [0 0 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("filter" .
+   [1 0 0 0 0 0])
+  ("not" .
+   [4 0 0])
+  ("not=" .
+   [0 0 0 1])
+  ("archived-sound" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0 0])
+  ("*current-uploads*" .
+   [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("redirect" .
+   [1 0 0 0 0 0 0 0])
+  ("ring.util.response" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("set" .
+   [3 0 0])
+  ("ns" .
+   [3 0])
+  ("listenlaterfm." .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("facts" .
+   [3 0 0 0 0])
+  ("fact" .
+   [11 0 0 0])
+  ("=>" .
+   [8 0])
+  ("page-type-of" .
+   [0 0 0 0 0 0 0 2 0 0 0 0])
+  ("contents" .
+   [3 0 0 0 0 0 0 0])
+  ("css-class" .
+   [1 0 0 1 2 0 1 0 0])
+  (".contains" .
+   [2 0 0 0 0 0 0 0 0])
+  (":soundcloud-set-page" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":other-page" .
+   [0 0 0 0 0 1 0 1 0 0 0])
+  ("print" .
+   [1 0 0 0 0])
+  ("second" .
+   [1 0 0 0 0 0])
+  ("cond" .
+   [6 0 0 0])
+  ("has-class?" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("and" .
+   [7 0 0])
+  ("scrap" .
+   [3 0 0 0 0])
+  ("contents-soundcloud-single-sound" .
+   [0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("contents-soundcloud-set" .
+   [1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("contents-soundcloud-profile" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("contents-not-sound" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("defmulti" .
+   [0 0 0 0 0 1 0 0])
+  ("defmethod" .
+   [0 0 0 0 0 0 1 0 0])
+  (":soundcloud-sound-page" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  (":soundcloud-profile-page" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("data-sc-track.." .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("re-matcher" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("re-pattern" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("data-sc-track-matcher" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("data-sc-track-pattern" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("module" .
+   [2 0 0 0 0 0])
+  ("username" .
+   [21 1 0 0 0 0 1 1])
+  ("users" .
+   [4 0 0 0 0])
+  ("id" .
+   [5 0])
+  ("private" .
+   [2 0 0 0 0 0 0])
+  ("next_id" .
+   [1 0 0 0 0 0 0])
+  ("current_id" .
+   [1 0 0 0 0 0 0 0 0 1])
+  ("not_required" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("HTTParty" .
+   [1 0 0 0 0 0 0 0])
+  ("expected" .
+   [4 0 0 0 0 0 0 0])
+  ("parse" .
+   [3 0 0 0 0])
+  ("JSON" .
+   [1 0 0 0])
+  ("WebServiceClient" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add_username" .
+   [0 0 0 0 0 0 0 0 0 0 1 0])
+  ("status" .
+   [1 0 0 0 0 1])
+  ("user_with_username" .
+   [0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("verified" .
+   [1 0 0 0 0 0 0 0])
+  ("argument" .
+   [1 0 0 0 0 0 0 0])
+  ("path" .
+   [2 0 0 1])
+  ("should" .
+   [6 0 0 0 0 0])
+  ("req" .
+   [1 0 0])
+  ("each" .
+   [0 0 1 0])
+  ("an" .
+   [1 0])
+  ("to_json" .
+   [1 0 0 0 0 0 0])
+  ("Config" .
+   [1 0 0 0 0 0])
+  ("api_host" .
+   [2 0 0 0 0 1 0 0])
+  ("query" .
+   [3 0 0 0 1])
+  ("arms" .
+   [1 0 0 0])
+  ("true" .
+   [2 0 0 0])
+  ("reg" .
+   [2 0 0])
+  ("acc" .
+   [1 0 0])
+  ("ignored?" .
+   [1 0 0 0 0 0 0 0])
+  ("reject" .
+   [1 0 0 0 0 0])
+  ("configuration-manager" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("recogniser" .
+   [0 0 0 1 1 0 1 0 0 0])
+  ("key" .
+   [2 0 0])
+  ("lookup" .
+   [1 0 0 0 1 0])
+  ("clear" .
+   [1 0 0 0 0])
+  ("code-conversion-map-vector" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("is" .
+   [5 0])
+  ("by" .
+   [2 0])
+  ("code" .
+   [1 0 0 0])
+  ("instead" .
+   [1 0 0 0 0 0 0])
+  ("in" .
+   [6 0])
+  ("gem" .
+   [1 0 0])
+  ("you" .
+   [3 0 0])
+  ("with" .
+   [2 0 0 0])
+  ("the" .
+   [8 0 0])
+  ("type" .
+   [1 0 0 0])
+  ("would" .
+   [1 0 0 0 0])
+  ("r-to-a" .
+   [1 0 0 0 0 0])
+  ("roman" .
+   [3 0 0 0 0])
+  ("roman-character" .
+   [0 0 0 0 1 1 0 0 0 0 0 0 0 0 0])
+  ("banana" .
+   [2 0 0 0 1 0])
+  ("I" .
+   [1])
+  ("reduce" .
+   [5 0 0 0 0 0])
+  ("III" .
+   [1 0 0])
+  ("last" .
+   [5 0 0 0])
+  ("current" .
+   [5 0 0 1 1 3 0])
+  ("last-value" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("pop" .
+   [1 0 0])
+  ("last-list" .
+   [1 0 0 0 0 0 1 0 0])
+  ("current-but-last" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("if-let" .
+   [0 0 0 1 0 0])
+  ("==" .
+   [1 0])
+  ("orange" .
+   [2 0 0 0 1 0])
+  ("apply" .
+   [3 0 0 0 0])
+  ("orange2" .
+   [1 0 0 0 0 0 0])
+  ("grape" .
+   [1 0 0 1 0])
+  ("amounts" .
+   [0 0 0 1 1 0 0])
+  ("watermelon" .
+   [0 0 0 0 0 1 1 1 1 0])
+  ("total" .
+   [1 0 0 0 0])
+  ("snake" .
+   [1 0 0 0 0])
+  ("tail" .
+   [6 0 0 0])
+  ("first" .
+   [3 0 0 0 0])
+  ("every?" .
+   [0 0 0 0 0 1])
+  ("everything" .
+   [1 0 0 0 0 0 0 1 0 0])
+  ("nil?" .
+   [1 0 0 0])
+  ("author" .
+   [1 0 0 0 0 0])
+  ("spammer" .
+   [3 0 0 0 0 0 0])
+  ("flag-as-spammer" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("assoc" .
+   [0 0 0 1 0])
+  ("provided" .
+   [1 0 0 0 0 0 0 0])
+  ("dispatch!" .
+   [0 0 0 0 0 0 0 1 0])
+  ("anything" .
+   [1 0 0 0 0 0 0 0])
+  ("services" .
+   [1 0 0 0 0 0 0 0])
+  ("for" .
+   [1 0 0])
+  ("User" .
+   [6 0 0 0])
+  ("expected_user" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("world" .
+   [7 0 0 0 0])
+  ("GET" .
+   [1 0 0])
+  ("HTTP" .
+   [1 0 0 0])
+  ("include" .
+   [1 0 0 0 0 0 0])
+  ("user_by_id" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("u" .
+   [1])
+  ("This" .
+   [2 0 0 0])
+  ("option" .
+   [1 0 0 0 0 0])
+  ("more" .
+   [1 0 0 0])
+  ("left" .
+   [1 0 0 0])
+  ("some" .
+   [1 0 0 0])
+  ("SimpleCov" .
+   [1 0 0 0 0 0 0 0 0])
+  ("coverage" .
+   [2 0 0 0 0 0 0 0])
+  ("tests" .
+   [1 0 0 0 0])
+  ("run" .
+   [2 0 0])
+  ("trigger" .
+   [1 0 0 0 0 0 0])
+  ("environment" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("variable" .
+   [1 0 0 0 0 0 0 0])
+  ("want" .
+   [1 0 0 0])
+  ("build" .
+   [1 0 0 0 0])
+  ("shell" .
+   [1 0 0 0 0])
+  ("integration" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("Mat" .
+   [1 0 0])
+  ("Vitor" .
+   [1 0 0 0 0])
+  ("support" .
+   [1 0 0 0 0 0 0])
+  ("Default" .
+   [1 0 0 0 0 0 0])
+  ("case" .
+   [4 0 0 0])
+  ("World" .
+   [7 0 0 0 0])
+  ("extends" .
+   [1 0 0 0 1 0 0])
+  ("HashMap" .
+   [0 0 0 0 1 0 0])
+  ("String" .
+   [6 0 0 0 0 0])))
